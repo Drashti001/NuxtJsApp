@@ -1,0 +1,72 @@
+{
+  "todo": [
+    {
+      "taskname": "learning java",
+      "priority": "Low",
+      "status": false,
+      "id": 4
+    },
+    {
+      "taskname": "learning C++",
+      "priority": "Low",
+      "status": false,
+      "id": 22
+    },
+    {
+      "taskname": "learn Vue2",
+      "priority": "Medium",
+      "status": false,
+      "id": 24
+    },
+    {
+      "taskname": "learning java",
+      "priority": "Low",
+      "status": false,
+      "id": 25
+    },
+    {
+      "taskname": "performing crud operaion ",
+      "priority": "Medium",
+      "status": true,
+      "id": 30
+    },
+    {
+      "taskname": "Creating Login Page",
+      "priority": "Medium",
+      "status": false,
+      "id": 42
+    },
+    {
+      "taskname": "creating Register Page",
+      "priority": "High",
+      "status": false,
+      "id": 43
+    },
+    {
+      "taskname": "tytry",
+      "priority": "High",
+      "status": false,
+      "id": 44
+    },
+    {
+      "taskname": "Creating Edit Page",
+      "priority": "High",
+      "status": false,
+      "id": 45
+    }
+  ],
+  "user":[
+    {
+      "firstname":"drashti",
+      "lastname":"kapatel",
+      "email":"d@gmail.com",
+      "password":12345678
+    },
+    {
+      "firstname":"ami",
+      "lastname":"patel",
+      "email":"a@gmail.com",
+      "password":87654321
+    }
+  ]
+}
