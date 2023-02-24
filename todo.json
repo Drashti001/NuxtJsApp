@@ -3,70 +3,150 @@
     {
       "taskname": "learning java",
       "priority": "Low",
-      "status": false,
+      "cstatus": true,
       "id": 4
     },
     {
-      "taskname": "learning C++",
+      "taskname": "creating webpage",
+      "priority": "Medium",
+      "cstatus": false,
+      "id": 5
+    },
+    {
+      "taskname": "asasaasas",
+      "priority": "Medium",
+      "cstatus": false,
+      "id": 6
+    },
+    {
+      "taskname": "ttttttttttttttttttt",
+      "priority": "Medium",
+      "cstatus": false,
+      "id": 7
+    },
+    {
+      "taskname": "trtrtr",
+      "priority": "Medium",
+      "cstatus": false,
+      "id": 8
+    },
+    {
+      "taskname": "uiuiuiuiui",
       "priority": "Low",
-      "status": false,
+      "cstatus": false,
+      "id": 9
+    },
+    {
+      "taskname": "trtrrtr",
+      "priority": "Medium",
+      "cstatus": false,
+      "id": 10
+    },
+    {
+      "taskname": "tyuyu",
+      "priority": "Low",
+      "cstatus": false,
+      "id": 11
+    },
+    {
+      "taskname": "qqqqqq",
+      "priority": "Medium",
+      "cstatus": false,
+      "id": 12
+    },
+    {
+      "taskname": "rererere",
+      "priority": "Medium",
+      "id": 13
+    },
+    {
+      "taskname": "uuyuy",
+      "priority": "High",
+      "id": 14
+    },
+    {
+      "taskname": "iuiuyuuy",
+      "priority": "Medium",
+      "id": 15
+    },
+    {
+      "taskname": "uuuuyu",
+      "priority": "Low",
+      "id": 16
+    },
+    {
+      "taskname": "uyyu",
+      "priority": "Medium",
+      "id": 17
+    },
+    {
+      "taskname": "uuj",
+      "priority": "Medium",
+      "id": 18
+    },
+    {
+      "taskname": "gg",
+      "priority": "Medium",
+      "id": 19
+    },
+    {
+      "taskname": "erreere",
+      "priority": "Medium",
+      "id": 20
+    },
+    {
+      "taskname": "ytytytyty",
+      "priority": "Medium",
+      "cstatus": false,
+      "id": 21
+    },
+    {
+      "taskname": "ererere",
+      "priority": "Medium",
+      "cstatus": false,
       "id": 22
     },
     {
-      "taskname": "learn Vue2",
-      "priority": "Medium",
-      "status": false,
+      "taskname": "trtrtrrt",
+      "priority": "High",
+      "cstatus": false,
+      "id": 23
+    },
+    {
+      "taskname": "tytyty",
+      "priority": "High",
+      "cstatus": false,
       "id": 24
     },
     {
-      "taskname": "learning java",
-      "priority": "Low",
-      "status": false,
+      "taskname": "ytuyt",
+      "priority": "Medium",
+      "cstatus": false,
       "id": 25
     },
     {
-      "taskname": "performing crud operaion ",
+      "taskname": "yyyytut",
+      "priority": "High",
+      "cstatus": false,
+      "id": 26
+    },
+    {
+      "taskname": "thggg",
       "priority": "Medium",
-      "status": true,
-      "id": 30
+      "cstatus": false,
+      "id": 27
     },
     {
-      "taskname": "Creating Login Page",
+      "taskname": "rttrtrrt",
       "priority": "Medium",
-      "status": false,
-      "id": 42
+      "cstatus": false,
+      "id": 28
     },
     {
-      "taskname": "creating Register Page",
-      "priority": "High",
-      "status": false,
-      "id": 43
-    },
-    {
-      "taskname": "tytry",
-      "priority": "High",
-      "status": false,
-      "id": 44
-    },
-    {
-      "taskname": "Creating Edit Page",
-      "priority": "High",
-      "status": false,
-      "id": 45
-    }
-  ],
-  "user":[
-    {
-      "firstname":"drashti",
-      "lastname":"kapatel",
-      "email":"d@gmail.com",
-      "password":12345678
-    },
-    {
-      "firstname":"ami",
-      "lastname":"patel",
-      "email":"a@gmail.com",
-      "password":87654321
+      "taskname": "uiuui",
+      "priority": "Low",
+      "cstatus": false,
+      "id": 29
     }
   ]
 }

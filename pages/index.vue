@@ -6,21 +6,16 @@
     :items="todo.todo" 
     class="elevation-1">
     <template v-slot:[`item.taskname`]="{ item }">
-      <span v-bind:class="item.status ? 'isclicked' : '' ">{{ item.taskname }}</span> 
+      <span v-bind:class="item.cstatus ? 'isclicked' : '' ">{{ item.taskname }}</span> 
     </template>
-    <template v-slot:[`item.status`]="{ item }">
+    <template v-slot:[`item.cstatus`]="{ item }">
       <v-simple-checkbox
-        v-model="item.status"
-        @click="ChkStatus(item)"
+        v-model="item.cstatus"
+        @click="Chkcstatus(item)"
         :single-select="singleSelect"
         
       ></v-simple-checkbox>
     </template>
-    <!-- <div
-          data-cy="todo-item-priority-indicator"
-          class="mt-2 w-3 h-3 rounded-full"
-          :style="{ background: priorityColor[todoItem.priority] }"
-        ></div> -->
       <template v-slot:top>
           <div class="d-flex justify-center ma-4">
               <v-col sm="12">
@@ -103,9 +98,9 @@
               <!-- Delete Model Close -->
           </v-toolbar>
       </template>
-      <!-- Changing status using v-switch -->
-      <!-- <template v-slot:[`item.status`]="{ item }">
-          <v-switch v-model="item.status" flat color="primary" :label="`${item.status ? 'Active' : 'Deactive'}`" @change="changeStatus(item)"></v-switch>
+      <!-- Changing cstatus using v-switch -->
+      <!-- <template v-slot:[`item.cstatus`]="{ item }">
+          <v-switch v-model="item.cstatus" flat color="primary" :label="`${item.cstatus ? 'Active' : 'Deactive'}`" @change="changecstatus(item)"></v-switch>
       </template> -->
 
       <!-- Edit and Delete Action with Icons -->
@@ -137,7 +132,7 @@ export default {
       priority:null,
       singleSelect: false,
       isclicked:false,
-      //todoCheckbox: this.todo.status === 1 ? false : true,
+      //todoCheckbox: this.todo.cstatus === 1 ? false : true,
       alert: false,
       dialog: false,
       dialogDelete: false,
@@ -148,8 +143,8 @@ export default {
               value: "id"
           },
           {
-              text:"STATUS",
-              value:"status"
+              text:"cstatus",
+              value:"cstatus"
           },
           {
               text: "TASK NAME",
@@ -184,11 +179,10 @@ export default {
       message:""
       
   }),
-  created() {
-      //alert('created called');
-      this.$store.dispatch('getData');
-
-      console.log(this.$store.state, 'todo called');
+  mounted() {
+    //alert('created called');
+    this.$store.dispatch('getData');
+    console.log(this.$store.state, 'todo called');
       this.todo = this.$store.state.todos;
   },
   watch: {
@@ -241,15 +235,15 @@ export default {
             this.editedIndex = -1;
         });
       },
-      ChkStatus: function(item){
+      Chkcstatus: function(item){
         //alert('hbfsbdsb');
           console.log(item.taskname);
-          if (item.status == true) {
+          if (item.cstatus == true) {
               //alert('if');
                 let result = this.$axios.$put("http://localhost:4000/todo/" + item.id, {
                     taskname : item.taskname,
                     priority : item.priority,
-                    status: true,
+                    cstatus: true,
                     id: item.id,
 
                 }).then(function () {
@@ -262,7 +256,7 @@ export default {
                 this.$axios.$put("http://localhost:4000/todo/" + item.id, {
                     taskname: item.taskname,
                     priority: item.priority,
-                    status: false,
+                    cstatus: false,
                     id: item.id,
                 }).then(function () {});
 

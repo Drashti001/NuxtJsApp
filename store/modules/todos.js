@@ -4,8 +4,8 @@ export const namespaced =true
 
 export const state = {
     todo :[],
-    user :[],
-    currentUser:{firstname:'drashti'}
+    //user :[],
+    //currentUser:{firstname:'drashti'}
     //todo: null
 }
 export const mutations ={
@@ -27,12 +27,7 @@ export const mutations ={
         return Object.assign({}, task, tasks.data);
       }
     })),
-    SET_USER(state,user){
-      state.user = user
-    },
-    SET_CURRENT_USER(state,user){
-      state.currentUser = user;
-    }
+    
 
 }
 export const getters={
@@ -42,7 +37,7 @@ export const actions = {
 
     async getData({commit}){
          const data = await this.$axios.$get('http://localhost:4000/todo')
-       
+        console.log('data getting',data);
          commit('SET_TASK', data)
         },
 
@@ -50,7 +45,7 @@ export const actions = {
      async deleteTask({commit},id){
          await this.$axios.$delete(`http://localhost:4000/todo/${id}`);
          commit("DELETE_TASK",id);
-        // if(response.status == 200 || response.status == 204){
+        // if(response.cstatus == 200 || response.cstatus == 204){
         //   commit("DELETE_TASK",id);
         // }
       } ,
@@ -67,21 +62,10 @@ export const actions = {
         tasks);
         commit("UPDATE_TASK",response.data);
      },
-     async loadUser({commit}){
-     
-        let response = await this.$axios.$get('http://localhost:4000/user');
-        commit('SET_USER',response);
-       // console.log(response,'response');
-       // let user = response;
-        //console.log(user,'load user');
-       // commit('SET_USER', user.map(u => u.attributes));
-     },
-     loginUser({commit},user){
-      commit('SET_CURRENT_USER',user);
-     }
+    }
 
     
-}
+    
 
 
 export default{
